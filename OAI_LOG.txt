@@ -1,4 +1,5 @@
-[oai@R740 build]$ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf --sa --reorder-thread-disable
+[oai@R740 ming_git]$ cd ~/openairinterface5g/cmake_targets/ran_build/build/
+[oai@R740 build]$ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf --sa --reorder-thread-disable[sudo] password for oai: 
 CMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
 [CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
 [CONFIG] function config_libconfig_init returned 0
@@ -25,7 +26,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.893395 
+CPU Freq is 2.893398 
 [ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
 [ITTI]   Starting itti queue: TASK_TIMER as task 1
 [ITTI]   Starting itti queue: TASK_L2L1 as task 2
@@ -75,7 +76,7 @@ CPU Freq is 2.893395
 [LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
 [OPT]   OPT disabled
 [HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
-[NR_PHY]   RC.gNB = 0x2f8b620
+[NR_PHY]   RC.gNB = 0x3462b10
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [NR_PHY]   PRB blacklist 
@@ -86,7 +87,7 @@ CPU Freq is 2.893395
 Initializing northbound interface for L1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x2f902a0
+[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x3467790
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [PHY]   create_gNB_tasks() Task ready initialize structures
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
@@ -100,8 +101,35 @@ Initializing northbound interface for L1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
-[LIBCONFIG] list prs_config not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
-[PHY]   No prs_config configuration found..!!
+[LIBCONFIG] prs_config.[0]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[1]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[2]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[3]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[4]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[5]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[6]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[7]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[8]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[9]: 16/16 parameters successfully set, (8 to default value)
+[PHY]   -----------------------------------------
+[PHY]   PRS Config for gNB_id 0 @ 0x7f497f572cf4
+[PHY]   -----------------------------------------
+[PHY]   NumPRSResources         0
+[PHY]   PRSResourceSetPeriod    [0, 0]
+[PHY]   NumRB                   0
+[PHY]   RBOffset                0
+[PHY]   CombSize                0
+[PHY]   PRSResourceRepetition   0
+[PHY]   PRSResourceTimeGap      0
+[PHY]   MutingBitRepetition     0
+[PHY]   SymbolStart            ][
+[PHY]   NumPRSSymbols          ][
+[PHY]   REOffset               ][
+[PHY]   PRSResourceOffset      ][
+[PHY]   NPRS_ID                ][
+[PHY]   MutingPattern1         ][
+[PHY]   MutingPattern2         ][
+[PHY]   -----------------------------------------
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
@@ -121,11 +149,11 @@ Initializing northbound interface for L1
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x2fa1800
+[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x347e2f0
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
-[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x2fa4d20 (1 of 1)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x3481810 (1 of 1)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (9 to default value)
@@ -187,7 +215,7 @@ NRRRC 0: Southbound Transport local_mac
 [NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
 [UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
 [NR_RRC]   Entering main loop of NR_RRC message task
-[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x2fa5c50
+[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x3482740
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
 [NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -596,9 +624,9 @@ RC.nb_nr_L1_inst:1
 Initializing gNB threads single_thread_flag:1 wait_for_sync:0
 [PHY]   Initializing gNB 0 single_thread_flag:1
 [PHY]   Initializing gNB 0
-[PHY]   Registering with MAC interface module (before 0x2f902a0)
+[PHY]   Registering with MAC interface module (before 0x3467790)
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[PHY]   Registering with MAC interface module (after 0x2f902a0)
+[PHY]   Registering with MAC interface module (after 0x3467790)
 [PHY]   Setting indication lists
 [PHY]   [nr-gnb.c] gNB structure allocated
 wait_gNBs()
@@ -609,7 +637,7 @@ Initializing RU threads
 configuring RU from file
 [LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x2fd4300
+Creating RC.ru[0]:0x34b0dc0
 [PHY]   Setting clock source to internal
 [PHY]   Setting time source to internal
 RU 0: Transport raw_if4p5
