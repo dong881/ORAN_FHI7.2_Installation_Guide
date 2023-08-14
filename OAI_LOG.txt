@@ -1,3 +1,4 @@
+oai@R740 linuxptp]$ cd ~/openairinterface5g/cmake_targets/ran_build/build/
 [oai@R740 build]$ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf --sa --reorder-thread-disable
 CMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
 [CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
@@ -25,7 +26,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.893392 
+CPU Freq is 2.893395 
 [ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
 [ITTI]   Starting itti queue: TASK_TIMER as task 1
 [ITTI]   Starting itti queue: TASK_L2L1 as task 2
@@ -75,7 +76,7 @@ CPU Freq is 2.893392
 [LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
 [OPT]   OPT disabled
 [HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
-[NR_PHY]   RC.gNB = 0x2b0bb10
+[NR_PHY]   RC.gNB = 0x4234b10
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [NR_PHY]   PRB blacklist 
@@ -86,7 +87,7 @@ CPU Freq is 2.893392
 Initializing northbound interface for L1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x2b10790
+[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x4239790
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [PHY]   create_gNB_tasks() Task ready initialize structures
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
@@ -111,7 +112,7 @@ Initializing northbound interface for L1
 [LIBCONFIG] prs_config.[8]: 16/16 parameters successfully set, (8 to default value)
 [LIBCONFIG] prs_config.[9]: 16/16 parameters successfully set, (8 to default value)
 [PHY]   -----------------------------------------
-[PHY]   PRS Config for gNB_id 0 @ 0x7efe5da3bcf4
+[PHY]   PRS Config for gNB_id 0 @ 0x7f666d7d9cf4
 [PHY]   -----------------------------------------
 [PHY]   NumPRSResources         0
 [PHY]   PRSResourceSetPeriod    [0, 0]
@@ -148,11 +149,11 @@ Initializing northbound interface for L1
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x2b272f0
+[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x42502f0
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
-[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x2b2a810 (1 of 1)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x4253810 (1 of 1)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (9 to default value)
@@ -218,7 +219,7 @@ NRRRC 0: Southbound Transport local_mac
 [NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
 [UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
 [NR_RRC]   Entering main loop of NR_RRC message task
-[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x2b2b740
+[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x4254740
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
 [NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -627,9 +628,9 @@ RC.nb_nr_L1_inst:1
 Initializing gNB threads single_thread_flag:1 wait_for_sync:0
 [PHY]   Initializing gNB 0 single_thread_flag:1
 [PHY]   Initializing gNB 0
-[PHY]   Registering with MAC interface module (before 0x2b10790)
+[PHY]   Registering with MAC interface module (before 0x4239790)
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[PHY]   Registering with MAC interface module (after 0x2b10790)
+[PHY]   Registering with MAC interface module (after 0x4239790)
 [PHY]   Setting indication lists
 [PHY]   [nr-gnb.c] gNB structure allocated
 wait_gNBs()
@@ -640,7 +641,7 @@ Initializing RU threads
 configuring RU from file
 [LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x2b59dc0
+Creating RC.ru[0]:0x4282dc0
 [PHY]   Setting clock source to internal
 [PHY]   Setting time source to internal
 RU 0: Transport raw_if4p5
@@ -676,17 +677,18 @@ EAL: Detected 2 NUMA nodes
 EAL: Auto-detected process type: PRIMARY
 EAL: Multi-process socket /var/run/dpdk/wls/mp_socket
 EAL: Selected IOVA mode 'PA'
+
 ^C
-Run time: 0h 70s
-        Time executing user inst.: 0s 93805us
-        Time executing system inst.: 1s 72784us
+Run time: 0h 23s
+        Time executing user inst.: 0s 66674us
+        Time executing system inst.: 1s 48252us
         Max. Phy. memory usage: 1750124kB
-        Page fault number (no io): 422983
+        Page fault number (no io): 422987
         Page fault number (requiring io): 0
         Number of file system read: 0
-        Number of filesystem write: 24
-        Number of context switch (process origin, io...): 256
-        Number of context switch (os origin, priority...): 1461
+        Number of filesystem write: 48
+        Number of context switch (process origin, io...): 157
+        Number of context switch (os origin, priority...): 1516
 Linux signal Interrupt...
 ../../../executables/softmodem-common.c:219 signal_handler() Exiting OAI softmodem: softmodem starting exit procedure
 
