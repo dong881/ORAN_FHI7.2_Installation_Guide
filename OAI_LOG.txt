@@ -1,5 +1,4 @@
 [oai@R740 build]$ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf --sa --reorder-thread-disable
-[sudo] password for oai: 
 CMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
 [CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
 [CONFIG] function config_libconfig_init returned 0
@@ -26,7 +25,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.893397 
+CPU Freq is 2.893399 
 [ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
 [ITTI]   Starting itti queue: TASK_TIMER as task 1
 [ITTI]   Starting itti queue: TASK_L2L1 as task 2
@@ -76,7 +75,7 @@ CPU Freq is 2.893397
 [LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
 [OPT]   OPT disabled
 [HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
-[NR_PHY]   RC.gNB = 0x32bfb10
+[NR_PHY]   RC.gNB = 0x3345b10
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [NR_PHY]   PRB blacklist 
@@ -87,7 +86,7 @@ CPU Freq is 2.893397
 Initializing northbound interface for L1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x32c4790
+[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x334a790
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [PHY]   create_gNB_tasks() Task ready initialize structures
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
@@ -112,7 +111,7 @@ Initializing northbound interface for L1
 [LIBCONFIG] prs_config.[8]: 16/16 parameters successfully set, (8 to default value)
 [LIBCONFIG] prs_config.[9]: 16/16 parameters successfully set, (8 to default value)
 [PHY]   -----------------------------------------
-[PHY]   PRS Config for gNB_id 0 @ 0x7f707bec1cf4
+[PHY]   PRS Config for gNB_id 0 @ 0x7f04e1956cf4
 [PHY]   -----------------------------------------
 [PHY]   NumPRSResources         0
 [PHY]   PRSResourceSetPeriod    [0, 0]
@@ -149,11 +148,11 @@ Initializing northbound interface for L1
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x32db2f0
+[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x33612f0
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
-[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x32de810 (1 of 1)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x3364810 (1 of 1)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (9 to default value)
@@ -219,7 +218,7 @@ NRRRC 0: Southbound Transport local_mac
 [NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
 [UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
 [NR_RRC]   Entering main loop of NR_RRC message task
-[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x32df740
+[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x3365740
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
 [NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -628,9 +627,9 @@ RC.nb_nr_L1_inst:1
 Initializing gNB threads single_thread_flag:1 wait_for_sync:0
 [PHY]   Initializing gNB 0 single_thread_flag:1
 [PHY]   Initializing gNB 0
-[PHY]   Registering with MAC interface module (before 0x32c4790)
+[PHY]   Registering with MAC interface module (before 0x334a790)
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[PHY]   Registering with MAC interface module (after 0x32c4790)
+[PHY]   Registering with MAC interface module (after 0x334a790)
 [PHY]   Setting indication lists
 [PHY]   [nr-gnb.c] gNB structure allocated
 wait_gNBs()
@@ -641,7 +640,7 @@ Initializing RU threads
 configuring RU from file
 [LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x330ddc0
+Creating RC.ru[0]:0x3393dc0
 [PHY]   Setting clock source to internal
 [PHY]   Setting time source to internal
 RU 0: Transport raw_if4p5
@@ -677,8 +676,9 @@ EAL: Detected 2 NUMA nodes
 EAL: Auto-detected process type: PRIMARY
 EAL: Multi-process socket /var/run/dpdk/wls/mp_socket
 EAL: Selected IOVA mode 'PA'
-EAL: No available hugepages reported in hugepages-2048kB
+EAL: 1024 hugepages of size 2097152 reserved, but no mounted hugetlbfs found for that size
 EAL: Probing VFIO support...
+EAL: VFIO support initialized
 EAL: No legacy callbacks, legacy socket not created
 EAL: Cannot find device (0000:8a:0a.0)
 EAL: Failed to attach device on primary process
