@@ -49,14 +49,14 @@
 [0m[ITTI]   Starting itti queue: TASK_NAS_NRUE as task 45
 [0m[OPT]   OPT disabled
 [0m[HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
-[0m[NR_PHY]   RC.gNB = 0x3d4e720
+[0m[NR_PHY]   RC.gNB = 0x353d730
 [0m[NR_PHY]   PRB blacklist 
 [0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
 [0m[PHY]   TX_AMP = 10361 (-10 dBFS)
 [0m[PHY]   L1_RX_THREAD_CORE -1 (17)
 [0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
-[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x3d533a0
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x35423b0
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[PHY]   create_gNB_tasks() Task ready initialize structures
 [0m[NR_PHY]   PRB blacklist 
@@ -67,7 +67,7 @@
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[PHY]   -----------------------------------------
-[0m[PHY]   PRS Config for gNB_id 0 @ 0x7f1a18c4fcf4
+[0m[PHY]   PRS Config for gNB_id 0 @ 0x7f7fe649ecf4
 [0m[PHY]   -----------------------------------------
 [0m[PHY]   NumPRSResources 	0
 [0m[PHY]   PRSResourceSetPeriod 	[0, 0]
@@ -95,7 +95,7 @@
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[0m[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x3d69f00
+[0m[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x3558f10
 [0mCMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
 [CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
 [CONFIG] function config_libconfig_init returned 0
@@ -119,7 +119,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.893397 
+CPU Freq is 2.893394 
 [LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
@@ -150,7 +150,7 @@ Initializing northbound interface for L1
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
-[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x3d6d420 (1 of 1)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x355c430 (1 of 1)
 [0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 643392, DLBand 78, ABSFREQPOINTA 642816, DLBW 273,RACH_TargetReceivedPower -96
 [0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -188,7 +188,7 @@ Initializing northbound interface for L1
 [0m[NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
 [0m[UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
 [0m[NR_RRC]   Entering main loop of NR_RRC message task
-[0m[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x3d6e350
+[0m[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x355d360
 [0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
 [0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -618,9 +618,9 @@ NRRRC 0: Southbound Transport local_mac
 [0m[ITTI]   Created Posix thread TASK_GTPV1_U
 [0m[PHY]   Initializing gNB 0 single_thread_flag:1
 [0m[PHY]   Initializing gNB 0
-[0m[PHY]   Registering with MAC interface module (before 0x3d533a0)
+[0m[PHY]   Registering with MAC interface module (before 0x35423b0)
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
-[0m[PHY]   Registering with MAC interface module (after 0x3d533a0)
+[0m[PHY]   Registering with MAC interface module (after 0x35423b0)
 [0m[PHY]   Setting indication lists
 [0m[PHY]   [nr-gnb.c] gNB structure allocated
 [0m[PHY]   Setting clock source to internal
@@ -645,7 +645,7 @@ Initializing RU threads
 configuring RU from file
 [LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x3d9ca00
+Creating RC.ru[0]:0x358b9e0
 RU 0: Transport raw_if4p5
 [RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
 [RU 0] Setting half-slot parallelization to 1
@@ -660,452 +660,4 @@ wrapper.hpp: m_xranInit.io_cfg.dpdk_dev[0] =0000:3b:0a.1, m_xranInit.io_cfg.dpdk
 *** Numerology [] 
 *** Number of Slot [20] 
 *** IQ Width []
-*** Compression Method [ ]
-ORAN: transport_init
-Machine is not synchronized using PTP (1)!
-O-DU MAC address: 00:11:22:33:44:66
-O-RU MAC address: FFFFFF98:FFFFFFAE:71:01:64:FFFFFFD8
-eAxCID - 12:8:4:0 (f000, 0f00, 00f0, 000f)
-Total BF Weights : 32
- xran_init: MTU 8870
-total cores 32 c_mask 0x7 core 1 [id] system_core 0 [id] pkt_proc_core 0x4 [mask] pkt_aux_core 1 [id] timing_core 1 [id]
-xran_ethdi_init_dpdk_io: Calling rte_eal_init:wls -c 0x7 -n2 --iova-mode=pa --socket-mem=8192 --socket-limit=8192 --proc-type=auto --file-prefix wls -w 0000:00:00.0   
-EAL: Probing VFIO support...
-EAL: VFIO support initialized
-EAL: No legacy callbacks, legacy socket not created
-EAL:   using IOMMU type 1 (Type 1)
-EAL: Probe PCI driver: net_i40e_vf (8086:154c) device: 0000:3b:0a.1 (socket 0)
-initializing port 0 for TX, drv=net_i40e_vf
-Port 0 MAC: 00 11 22 33 44 66
-Port 0: nb_rxd 4096 nb_txd 4096
-
-Checking link status portid [0]   ... done
-Port 0 Link Up - speed 10000 Mbps - full-duplex
-EAL: Probe PCI driver: net_i40e_vf (8086:154c) device: 0000:3b:0a.0 (socket 0)
-initializing port 1 for TX, drv=net_i40e_vf
-Port 1 MAC: 00 11 22 33 44 66
-Port 1: nb_rxd 4096 nb_txd 4096
-
-Checking link status portid [1]   ... done
-Port 1 Link Up - speed 10000 Mbps - full-duplex
-vf 0 local  SRC MAC: 00 11 22 33 44 66
-vf 0 remote DST MAC: 98 ae 71 01 64 d8
-vf 1 local  SRC MAC: 00 11 22 33 44 66
-vf 1 remote DST MAC: 98 ae 71 01 64 d8
-wrapper.hpp: nFpgaToSW_FTH_RxBufferLen=13168 , nSW_ToFpga_FTH_TxBufferLen=15696
-XRAN front haul xran_mm_init
-xran_sector_get_instances [0]: CC 0 handle 0x3e0c040
-Handle: 0x7f19afd77c70 Instance: 0x3e0c040
-init_memory [0]: CC 0 handle 0x3e0c040
-Sucess xran_mm_init
-wrapper.hpp: Init memory *** XRANFTHTX_OUT ***
-Call xran_bm_init 0
-ru_0_cc_0_idx_0: [ handle 0x3e0c040 0 0 ] [nPoolIndex 0] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 0] mb pool 0x2ea4f6b00 
-wrapper.hpp: Init memory *** XRANFTHTX_SEC_DESC_OUT ***
-ru_0_cc_0_idx_1: [ handle 0x3e0c040 0 0 ] [nPoolIndex 1] nNumberOfBuffers 17920 nBufferSize 24
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 1] mb pool 0x2e9220fc0 
-wrapper.hpp: Init memory *** XRANFTHTX_PRB_MAP_OUT ***
-ru_0_cc_0_idx_2: [ handle 0x3e0c040 0 0 ] [nPoolIndex 2] nNumberOfBuffers 1120 nBufferSize 48416
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 2] mb pool 0x2e8686980 
-wrapper.hpp: Init memory *** XRANFTHRX_IN ***
-ru_0_cc_0_idx_3: [ handle 0x3e0c040 0 0 ] [nPoolIndex 3] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 3] mb pool 0x2e50a8e40 
-wrapper.hpp: Init memory *** XRANFTHTX_SEC_DESC_IN ***
-ru_0_cc_0_idx_4: [ handle 0x3e0c040 0 0 ] [nPoolIndex 4] nNumberOfBuffers 17920 nBufferSize 24
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 4] mb pool 0x2e3dd3300 
-wrapper.hpp: Init memory *** XRANFTHRX_PRB_MAP_IN ***
-ru_0_cc_0_idx_5: [ handle 0x3e0c040 0 0 ] [nPoolIndex 5] nNumberOfBuffers 1120 nBufferSize 48416
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 5] mb pool 0x2e3238cc0 
-wrapper.hpp: Init memory *** XRANFTHRACH_IN ***
-ru_0_cc_0_idx_6: [ handle 0x3e0c040 0 0 ] [nPoolIndex 6] nNumberOfBuffers 1120 nBufferSize 8192
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 6] mb pool 0x2dfc5b180 
-wrapper.hpp: Init memory *** XRANSRS_IN ***
-ru_0_cc_0_idx_7: [ handle 0x3e0c040 0 0 ] [nPoolIndex 7] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x3e0c040 ru 0 cc_idx 0 ] [nPoolIndex 7] mb pool 0x2df175340 
-INIT DONE
-[HW]   [RAU] has loaded ETHERNET trasport protocol.
-[0m[PHY]   Starting ru_thread 0
-[0m[PHY]   Initializing RU proc 0 (NGFI_RAU_IF4p5,synch_to_ext_device),
-[0m[UTIL]   threadCreate for ru_thread, affinity 8, priority 97
-[0m[PHY]   Starting RU 0 (NGFI_RAU_IF4p5,synch_to_ext_device) on cpu 0
-[0m[PHY]   Initializing frame parms for mu 1, N_RB 273, Ncp 0
-[0m[93m[PHY]   Init: N_RB_DL 273, first_carrier_offset 2458, nb_prefix_samples 288,nb_prefix_samples0 352, ofdm_symbol_size 4096
-[0m[PHY]   fp->scs=30000
-[0m[PHY]   fp->ofdm_symbol_size=4096
-[0m[PHY]   fp->nb_prefix_samples0=352
-[0m[PHY]   fp->nb_prefix_samples=288
-[0m[PHY]   fp->slots_per_subframe=2
-[0m[PHY]   fp->samples_per_subframe_wCP=114688
-[0m[PHY]   fp->samples_per_frame_wCP=1146880
-[0m[PHY]   fp->samples_per_subframe=122880
-[0m[PHY]   fp->samples_per_frame=1228800
-[0m[PHY]   fp->dl_CarrierFreq=3691380000
-[0m[PHY]   fp->ul_CarrierFreq=3691380000
-[0m[PHY]   Setting RF config for N_RB 273, NB_RX 1, NB_TX 2
-[0m[PHY]   Channel 0: setting tx_gain offset 0, rx_gain offset 0, tx_freq 3691380000 Hz, rx_freq 3691380000 Hz, tune_offset 0 Hz, sample_rate 122880000 Hz
-[0m[PHY]   Channel 1: setting tx_gain offset 0, rx_gain offset 0, tx_freq 3691380000 Hz, rx_freq 3691380000 Hz, tune_offset 0 Hz, sample_rate 122880000 Hz
-[0m[PHY]   Initializing RU signal buffers (if_south IF4p5 RRU) nb_tx 2, nb_rx 1
-[0m[PHY]   nb_tx 2
-[0m[PHY]   rxdata_7_5kHz[0] 0x7f1a140d8040 for RU 0
-[0m[PHY]   [INIT] common.txdata_BF= 0x7f198c0009e0 (16 bytes)
-[0m[PHY]   txdataF_BF[0] 0x7f198c000a20 for RU 0
-[0m[PHY]   txdataF_BF[1] 0x7f198c070a80 for RU 0
-[0m[PHY]   rxdataF[0] 0x7f198c0e0b80 for RU 0
-[0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
-[0m[PHY]   Starting IF interface for RU 0, nb_rx 1
-[0m[PHY]   RU 0 Setting N_TA_offset to 1600 samples (factor 4.000000, UL Freq 3642240, N_RB 273, mu 1)
-[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 5
-[0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:00
-[0m[PHY]   RUs configured
-[0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
-[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7f1a1897b010
-[0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
-[0m[PHY]   Initialise nr transport
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 0/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 1/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 2/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 3/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 4/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 5/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 6/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 7/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 8/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 9/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 10/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 11/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 12/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 13/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 14/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 15/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 16/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 17/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 18/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 19/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 20/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 21/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 22/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 23/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 24/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 25/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 26/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 27/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 28/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 29/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 30/32
-[0m[PHY]   Allocating Transport Channel Buffers for PUCCH 31/32
-[0m[PHY]   Allocating Transport Channel Buffers for SRS 0/4
-[0m[PHY]   Allocating Transport Channel Buffers for SRS 1/4
-[0m[PHY]   Allocating Transport Channel Buffers for SRS 2/4
-[0m[PHY]   Allocating Transport Channel Buffers for SRS 3/4
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  0/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  1/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  2/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  3/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  4/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  5/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  6/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  7/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  8/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  9/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  10/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  11/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  12/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  13/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  14/16
-[0m[PHY]   Allocating Transport Channel Buffers for ULSCH  15/16
-[0m[PHY]   Mapping RX ports from 1 RUs to gNB 0
-[0m[PHY]   gNB->num_RU:1
-[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
-[0m[UTIL]   threadCreate for Tpool0_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool1_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool2_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool3_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool4_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool5_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool6_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for Tpool7_-1, affinity ffffffff, priority 97
-[0m[UTIL]   threadCreate for L1_rx_thread, affinity ffffffff, priority 97
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 0/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 1/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 2/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 3/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 4/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 5/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 6/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 7/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 8/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 9/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 10/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 11/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 12/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 13/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 14/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[PHY]   Allocating Transport Channel Buffers for DLSCH 15/16
-[0m[PHY]   Allocating 72 segments (MAX 36, N_PRB 273)
-[0m[UTIL]   threadCreate for L1_stats, affinity ffffffff, priority 1
-[0mSetUp ORAN. Done
-**--**--**--**--**--**--**--**--**--**--**--**
-ORAN Configuration
-* Numerology     = 1
-* Duplex Type    = 1
-* Number CC      = 1
-* Number eAxc    = 2
-* Number eAxc UL = 0
-* Number RBs DL  = 273
-* Number RBs UL  = 273
-**--**--**--**--**--**--**--**--**--**--**--**
-Register physide callbacks. Done
-Open Oran callbacks. Done
-
-
-
-Init Oran. Done
- xran_open: 5G NR Category A
-xRAN open PRACH config: Numerology 1 ConfIdx 159, preambleFmrt 10 startsymb 0, numSymbol 12, occassionsInPrachSlot 1
-PRACH: x 1 y[0] 0, y[1] 0 prach slot: 9 ..
-PRACH start symbol 0 lastsymbol 11
-xran_open: interval_us=500
-XRAN_UP_VF: 0x0000
-XRAN_CP_VF: 0x0001
-xran_timing_source_thread [CPU  1] [PID:  10146]
-xran_open. Done
-ring_processing_thread [CPU  2] [PID:  10146]
-openair0_transport_init returns 0 for ru_id 0
-ORAN: get_internal_parameter
-ORAN: get_internal_parameter
-ORAN: trx_oran_start
-Start ORAN. Done
-setup_RU_buffers: frame_parms = 0x3da24b0
-waiting for sync (ru_thread,-1/0x12a8a14,0x20319e0,0x1f26f00)
-wait RUs
-ALL RUs READY!
-RC.nb_RU:1
-ALL RUs ready - init gNBs
-Not NFAPI mode - call init_eNB_afterRU()
-[LIBCONFIG] loader.dfts: 2/2 parameters successfully set, (1 to default value)
-shlib_path libdfts.so
-[LOADER] library libdfts.so successfully loaded
-[LIBCONFIG] loader.ldpc: 2/2 parameters successfully set, (1 to default value)
-shlib_path libldpc.so
-[LOADER] library libldpc.so successfully loaded
-O-DU: thread_run start time: 08/14/23 17:48:42.000000000 UTC [500]
-Start C-plane DL 30 us after TTI  [trigger on sym 1]
-Start C-plane UL 71 us after TTI  [trigger on sym 2]
-Start U-plane DL 350 us before OTA [offset  in sym -9]
-Start U-plane UL 180 us OTA        [offset  in sym 6]
-C-plane to U-plane delay 320 us after TTI
-Start Sym timer 71428 ns
-interval_us 500
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-create a thread for core -1
-waiting for sync (L1_stats_thread,-1/0x12a8a14,0x20319e0,0x1f26f00)
-ALL RUs ready - ALL gNBs ready
-Sending sync to all threads
-got sync (L1_stats_thread)
-got sync (ru_thread)
-[PHY]   RU 0 no rf device
-[0m[PHY]   RU 0 RF started opp_enabled 0
-[0m[PHY]   before adjusting, OAI: frame=0 slot=0, XRAN: frame=0 slot=1
-[0m[PHY]   After adjusting, OAI: frame=0 slot=1, XRAN: frame=0 slot=1
-[0m[1;31m[PHY]   Received Timestamp doesn't correspond to the time we think it is (proc->frame_rx.proc->tti_rx 0.4, slot 3)
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m
-
-^C
-EAL: Detected 32 lcore(s)
-EAL: Detected 2 NUMA nodes
-EAL: Auto-detected process type: PRIMARY
-EAL: Multi-process socket /var/run/dpdk/wls/mp_socket
-EAL: Selected IOVA mode 'PA'
-EAL: No available hugepages reported in hugepages-2048kB
+*** Compression Method [
