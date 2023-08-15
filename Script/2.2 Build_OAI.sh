@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 開發中...
+
 # cd ~
 cd ./openairinterface5g/cmake_targets/
 

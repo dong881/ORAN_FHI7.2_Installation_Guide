@@ -1,10 +1,21 @@
 #!/bin/bash
 
-NIC=ens1f1
+echo "--> Check NIC: $NIC"
+ifconfig
 
-# echo "Check NIC: $NIC"
-# ifconfig
-# ethtool -i $NIC
+DEFAULT_NIC="ens1f1"
+
+echo "Please input NIC name (default: $DEFAULT_NIC):"  
+read INPUT_NIC
+
+if [ -z "$INPUT_NIC" ]; then
+  NIC=$DEFAULT_NIC
+else
+  NIC=$INPUT_NIC 
+fi
+
+echo "--> NIC is set to: $NIC"
+ethtool -i $NIC
 
 echo "--> Create VF on $NIC"
 sudo echo 0 > /sys/class/net/$NIC/device/sriov_numvfs 

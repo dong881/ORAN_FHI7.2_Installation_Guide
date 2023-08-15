@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# cd ~
+cd ~
 wget http://fast.dpdk.org/rel/dpdk-20.05.tar.xz
 tar xvf dpdk-20.05.tar.xz
 cd dpdk-20.05

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd~
+
 echo "--> set the server to maximum performance mode."
 sudo tuned-adm profile realtime
 echo "success"
