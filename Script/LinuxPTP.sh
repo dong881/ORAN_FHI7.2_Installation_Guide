@@ -2,7 +2,7 @@
 
 # Clone and install linuxptp
 
-# cd ~
+cd ~
 git clone http://git.code.sf.net/p/linuxptp/code linuxptp
 cd ./linuxptp/
 git checkout v2.0
