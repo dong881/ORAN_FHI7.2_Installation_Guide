@@ -1,0 +1,688 @@
+[HW]   # /dev/cpu_dma_latency set to 2 us
+[0m[ENB_APP]   nfapi running mode: MONOLITHIC
+[0m[GNB_APP]   Getting GNBSParams
+[0m[ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
+[0m[ITTI]   Starting itti queue: TASK_TIMER as task 1
+[0m[ITTI]   Starting itti queue: TASK_L2L1 as task 2
+[0m[ITTI]   Starting itti queue: TASK_BM as task 3
+[0m[ITTI]   Starting itti queue: TASK_PHY_ENB as task 4
+[0m[ITTI]   Starting itti queue: TASK_MAC_GNB as task 5
+[0m[ITTI]   Starting itti queue: TASK_RLC_ENB as task 6
+[0m[ITTI]   Starting itti queue: TASK_RRC_ENB_NB_IoT as task 7
+[0m[ITTI]   Starting itti queue: TASK_PDCP_ENB as task 8
+[0m[ITTI]   Starting itti queue: TASK_PDCP_GNB as task 9
+[0m[ITTI]   Starting itti queue: TASK_DATA_FORWARDING as task 10
+[0m[ITTI]   Starting itti queue: TASK_END_MARKER as task 11
+[0m[ITTI]   Starting itti queue: TASK_RRC_ENB as task 12
+[0m[ITTI]   Starting itti queue: TASK_RRC_GNB as task 13
+[0m[ITTI]   Starting itti queue: TASK_RAL_ENB as task 14
+[0m[ITTI]   Starting itti queue: TASK_S1AP as task 15
+[0m[ITTI]   Starting itti queue: TASK_NGAP as task 16
+[0m[ITTI]   Starting itti queue: TASK_X2AP as task 17
+[0m[ITTI]   Starting itti queue: TASK_M2AP_ENB as task 18
+[0m[ITTI]   Starting itti queue: TASK_M2AP_MCE as task 19
+[0m[ITTI]   Starting itti queue: TASK_M3AP as task 20
+[0m[ITTI]   Starting itti queue: TASK_M3AP_MME as task 21
+[0m[ITTI]   Starting itti queue: TASK_M3AP_MCE as task 22
+[0m[ITTI]   Starting itti queue: TASK_SCTP as task 23
+[0m[ITTI]   Starting itti queue: TASK_ENB_APP as task 24
+[0m[ITTI]   Starting itti queue: TASK_GNB_APP as task 25
+[0m[ITTI]   Starting itti queue: TASK_MCE_APP as task 26
+[0m[ITTI]   Starting itti queue: TASK_MME_APP as task 27
+[0m[ITTI]   Starting itti queue: TASK_PHY_UE as task 28
+[0m[ITTI]   Starting itti queue: TASK_MAC_UE as task 29
+[0m[ITTI]   Starting itti queue: TASK_RLC_UE as task 30
+[0m[ITTI]   Starting itti queue: TASK_PDCP_UE as task 31
+[0m[ITTI]   Starting itti queue: TASK_RRC_UE as task 32
+[0m[ITTI]   Starting itti queue: TASK_RRC_NRUE as task 33
+[0m[ITTI]   Starting itti queue: TASK_NAS_UE as task 34
+[0m[ITTI]   Starting itti queue: TASK_RAL_UE as task 35
+[0m[ITTI]   Starting itti queue: TASK_GTPV1_U as task 36
+[0m[ITTI]   Starting itti queue: TASK_CU_F1 as task 37
+[0m[ITTI]   Starting itti queue: TASK_DU_F1 as task 38
+[0m[ITTI]   Starting itti queue: TASK_CUCP_E1 as task 39
+[0m[ITTI]   Starting itti queue: TASK_CUUP_E1 as task 40
+[0m[ITTI]   Starting itti queue: TASK_RRC_UE_SIM as task 41
+[0m[ITTI]   Starting itti queue: TASK_RRC_GNB_SIM as task 42
+[0m[ITTI]   Starting itti queue: TASK_RRC_NSA_UE as task 43
+[0m[ITTI]   Starting itti queue: TASK_RRC_NSA_NRUE as task 44
+[0m[ITTI]   Starting itti queue: TASK_NAS_NRUE as task 45
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
+[0m[NR_PHY]   RC.gNB = 0x2ccf720
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   TX_AMP = 10361 (-10 dBFS)
+[0m[PHY]   L1_RX_THREAD_CORE -1 (17)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x2cd43a0
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   create_gNB_tasks() Task ready initialize structures
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   TX_AMP = 10361 (-10 dBFS)
+[0m[PHY]   L1_RX_THREAD_CORE -1 (17)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   -----------------------------------------
+[0m[PHY]   PRS Config for gNB_id 0 @ 0x7f0cdcd68cf4
+[0m[PHY]   -----------------------------------------
+[0m[PHY]   NumPRSResources 	0
+[0m[PHY]   PRSResourceSetPeriod 	[0, 0]
+[0m[PHY]   NumRB 			0
+[0m[PHY]   RBOffset 		0
+[0m[PHY]   CombSize 		0
+[0m[PHY]   PRSResourceRepetition 	0
+[0m[PHY]   PRSResourceTimeGap 	0
+[0m[PHY]   MutingBitRepetition 	0
+[0m[PHY]   SymbolStart 		[]
+[0m[PHY]   NumPRSSymbols 		[]
+[0m[PHY]   REOffset 		[]
+[0m[PHY]   PRSResourceOffset 	[]
+[0m[PHY]   NPRS_ID 		[]
+[0m[PHY]   MutingPattern1 		[]
+[0m[PHY]   MutingPattern2 		[]
+[0m[PHY]   -----------------------------------------
+[0m[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[0m[UTIL]   threadCreate for MAC_STATS, affinity ffffffff, priority 2
+[0m[UTIL]   threadCreate for rlc_data_req_thread, affinity ffffffff, priority 97
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[PHY]   create_gNB_tasks() RC.nb_nr_L1_inst:1
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[0m[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x2ceaf00
+[0mCMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
+[CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[LIBCONFIG] config: 2/2 parameters successfully set, (2 to default value)
+[CONFIG] debug flags: 0x00000000
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 54/54 parameters successfully set, (46 to default value)
+[LIBCONFIG] log_config: 54/54 parameters successfully set, (54 to default value)
+[LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
+[LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
+log init done
+Reading in command-line options
+[LIBCONFIG] (root): 37/37 parameters successfully set, (33 to default value)
+[LIBCONFIG] (root): 6/6 parameters successfully set, (5 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[CONFIG] parallel_conf is set to 0
+[CONFIG] worker_conf is set to 1
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+[LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
+configuring for RAU/RRU
+CPU Freq is 2.893403 
+[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] L1s.[0]: 19/19 parameters successfully set, (12 to default value)
+Initializing northbound interface for L1
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] L1s.[0]: 19/19 parameters successfully set, (12 to default value)
+Initializing northbound interface for L1
+[LIBCONFIG] prs_config.[0]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[1]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[2]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[3]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[4]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[5]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[6]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[7]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[8]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] prs_config.[9]: 16/16 parameters successfully set, (8 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x2cee420 (1 of 1)
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 643392, DLBand 78, ABSFREQPOINTA 642816, DLBW 273,RACH_TargetReceivedPower -96
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1
+[0m[GNB_APP]   pdsch_AntennaPorts N2 1
+[0m[GNB_APP]   pdsch_AntennaPorts XP 2
+[0m[GNB_APP]   pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 4
+[0m[GNB_APP]   SIB1 TDA 15
+[0m[GNB_APP]   Do CSI-RS 1
+[0m[GNB_APP]   Do SRS 0
+[0m[GNB_APP]   256 QAM: may be on
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[GNB_APP]   RRC starting with node type 2
+[0m[GNB_APP]   Sending configuration message to NR_RRC task
+[0m[PDCP]   pdcp init,usegtp 
+[0m[GNB_APP]   default drx 0
+[0m[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[0m[UTIL]   threadCreate for TASK_SCTP, affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_SCTP
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate for TASK_NGAP, affinity ffffffff, priority 50
+[0m[NGAP]   Starting NGAP layer
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3584
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[ITTI]   Created Posix thread TASK_NGAP
+[0m[NGAP]   3584 -> 0000e000
+[0m[NGAP]   servedGUAMIs.list.count 1
+[0m[NGAP]   PLMNSupportList.list.count 1
+[0m[NGAP]   PLMNSupportList.list.count 2
+[0m[UTIL]   threadCreate for TASK_GNB_APP, affinity ffffffff, priority 50
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[ITTI]   Created Posix thread TASK_GNB_APP
+[0m[NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
+[0m[UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x2cef350
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Checking release 
+[0m[NR_RRC]   SIB1 freq: absoluteFrequencySSB 643392, absoluteFrequencyPointA 642816
+[0m[NR_RRC]   SIB1 freq: absolute_diff 576, 2*(absolute_diff/(12*2) - 10) 28
+[0m[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (9 to default value)
+[LIBCONFIG] list gNBs.[0].servingCellConfigDedicated not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+NRRRC 0: Southbound Transport local_mac
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[LIBCONFIG] security: 4/4 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] gNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0].snssaiList.[0]: 2/2 parameters successfully set, (1 to default value)
+[LIBCONFIG] gNBs.[0].amf_ip_address.[0]: 4/4 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].SCTP: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+<SIB1>
+    <cellSelectionInfo>
+        <q-RxLevMin>-65</q-RxLevMin>
+    </cellSelectionInfo>
+    <cellAccessRelatedInfo>
+        <plmn-IdentityList>
+            <PLMN-IdentityInfo>
+                <plmn-IdentityList>
+                    <PLMN-Identity>
+                        <mcc>
+                            <MCC-MNC-Digit>0</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>0</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>1</MCC-MNC-Digit>
+                        </mcc>
+                        <mnc>
+                            <MCC-MNC-Digit>0</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>1</MCC-MNC-Digit>
+                        </mnc>
+                    </PLMN-Identity>
+                </plmn-IdentityList>
+                <trackingAreaCode>
+                    000000000000000000000001
+                </trackingAreaCode>
+                <cellIdentity>
+                    000000000000000000000000111000000000
+                </cellIdentity>
+                <cellReservedForOperatorUse><notReserved/></cellReservedForOperatorUse>
+            </PLMN-IdentityInfo>
+        </plmn-IdentityList>
+    </cellAccessRelatedInfo>
+    <servingCellConfigCommon>
+        <downlinkConfigCommon>
+            <frequencyInfoDL>
+                <frequencyBandList>
+                    <NR-MultiBandInfo>
+                        <freqBandIndicatorNR>78</freqBandIndicatorNR>
+                    </NR-MultiBandInfo>
+                </frequencyBandList>
+                <offsetToPointA>28</offsetToPointA>
+                <scs-SpecificCarrierList>
+                    <SCS-SpecificCarrier>
+                        <offsetToCarrier>0</offsetToCarrier>
+                        <subcarrierSpacing><kHz30/></subcarrierSpacing>
+                        <carrierBandwidth>273</carrierBandwidth>
+                    </SCS-SpecificCarrier>
+                </scs-SpecificCarrierList>
+            </frequencyInfoDL>
+            <initialDownlinkBWP>
+                <genericParameters>
+                    <locationAndBandwidth>1099</locationAndBandwidth>
+                    <subcarrierSpacing><kHz30/></subcarrierSpacing>
+                </genericParameters>
+                <pdcch-ConfigCommon>
+                    <setup>
+                        <controlResourceSetZero>11</controlResourceSetZero>
+                        <searchSpaceZero>0</searchSpaceZero>
+                        <commonSearchSpaceList>
+                            <SearchSpace>
+                                <searchSpaceId>1</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl1></sl1>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n1/></aggregationLevel4>
+                                    <aggregationLevel8><n0/></aggregationLevel8>
+                                    <aggregationLevel16><n0/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                            <SearchSpace>
+                                <searchSpaceId>2</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl1></sl1>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n1/></aggregationLevel4>
+                                    <aggregationLevel8><n0/></aggregationLevel8>
+                                    <aggregationLevel16><n0/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                            <SearchSpace>
+                                <searchSpaceId>3</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl1></sl1>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n1/></aggregationLevel4>
+                                    <aggregationLevel8><n0/></aggregationLevel8>
+                                    <aggregationLevel16><n0/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                        </commonSearchSpaceList>
+                        <searchSpaceSIB1>0</searchSpaceSIB1>
+                        <searchSpaceOtherSystemInformation>3</searchSpaceOtherSystemInformation>
+                        <pagingSearchSpace>2</pagingSearchSpace>
+                        <ra-SearchSpace>1</ra-SearchSpace>
+                    </setup>
+                </pdcch-ConfigCommon>
+                <pdsch-ConfigCommon>
+                    <setup>
+                        <pdsch-TimeDomainAllocationList>
+                            <PDSCH-TimeDomainResourceAllocation>
+                                <mappingType><typeA/></mappingType>
+                                <startSymbolAndLength>40</startSymbolAndLength>
+                            </PDSCH-TimeDomainResourceAllocation>
+                            <PDSCH-TimeDomainResourceAllocation>
+                                <mappingType><typeA/></mappingType>
+                                <startSymbolAndLength>54</startSymbolAndLength>
+                            </PDSCH-TimeDomainResourceAllocation>
+                            <PDSCH-TimeDomainResourceAllocation>
+                                <mappingType><typeA/></mappingType>
+                                <startSymbolAndLength>57</startSymbolAndLength>
+                            </PDSCH-TimeDomainResourceAllocation>
+                        </pdsch-TimeDomainAllocationList>
+                    </setup>
+                </pdsch-ConfigCommon>
+            </initialDownlinkBWP>
+            <bcch-Config>
+                <modificationPeriodCoeff><n2/></modificationPeriodCoeff>
+            </bcch-Config>
+            <pcch-Config>
+                <defaultPagingCycle><rf256/></defaultPagingCycle>
+                <nAndPagingFrameOffset>
+                    <quarterT>1</quarterT>
+                </nAndPagingFrameOffset>
+                <ns><one/></ns>
+                <firstPDCCH-MonitoringOccasionOfPO>
+                    <sCS120KHZoneT-SCS60KHZhalfT-SCS30KHZquarterT-SCS15KHZoneEighthT>
+                        <INTEGER>0</INTEGER>
+                    </sCS120KHZoneT-SCS60KHZhalfT-SCS30KHZquarterT-SCS15KHZoneEighthT>
+                </firstPDCCH-MonitoringOccasionOfPO>
+            </pcch-Config>
+        </downlinkConfigCommon>
+        <uplinkConfigCommon>
+            <frequencyInfoUL>
+                <scs-SpecificCarrierList>
+                    <SCS-SpecificCarrier>
+                        <offsetToCarrier>0</offsetToCarrier>
+                        <subcarrierSpacing><kHz30/></subcarrierSpacing>
+                        <carrierBandwidth>273</carrierBandwidth>
+                    </SCS-SpecificCarrier>
+                </scs-SpecificCarrierList>
+                <p-Max>23</p-Max>
+            </frequencyInfoUL>
+            <initialUplinkBWP>
+                <genericParameters>
+                    <locationAndBandwidth>1099</locationAndBandwidth>
+                    <subcarrierSpacing><kHz30/></subcarrierSpacing>
+                </genericParameters>
+                <rach-ConfigCommon>
+                    <setup>
+                        <rach-ConfigGeneric>
+                            <prach-ConfigurationIndex>159</prach-ConfigurationIndex>
+                            <msg1-FDM><one/></msg1-FDM>
+                            <msg1-FrequencyStart>0</msg1-FrequencyStart>
+                            <zeroCorrelationZoneConfig>15</zeroCorrelationZoneConfig>
+                            <preambleReceivedTargetPower>-96</preambleReceivedTargetPower>
+                            <preambleTransMax><n10/></preambleTransMax>
+                            <powerRampingStep><dB2/></powerRampingStep>
+                            <ra-ResponseWindow><sl20/></ra-ResponseWindow>
+                        </rach-ConfigGeneric>
+                        <ssb-perRACH-OccasionAndCB-PreamblesPerSSB>
+                            <oneHalf><n64/></oneHalf>
+                        </ssb-perRACH-OccasionAndCB-PreamblesPerSSB>
+                        <ra-ContentionResolutionTimer><sf64/></ra-ContentionResolutionTimer>
+                        <rsrp-ThresholdSSB>19</rsrp-ThresholdSSB>
+                        <prach-RootSequenceIndex>
+                            <l139>1</l139>
+                        </prach-RootSequenceIndex>
+                        <msg1-SubcarrierSpacing><kHz30/></msg1-SubcarrierSpacing>
+                        <restrictedSetConfig><unrestrictedSet/></restrictedSetConfig>
+                    </setup>
+                </rach-ConfigCommon>
+                <pusch-ConfigCommon>
+                    <setup>
+                        <pusch-TimeDomainAllocationList>
+                            <PUSCH-TimeDomainResourceAllocation>
+                                <k2>4</k2>
+                                <mappingType><typeB/></mappingType>
+                                <startSymbolAndLength>41</startSymbolAndLength>
+                            </PUSCH-TimeDomainResourceAllocation>
+                            <PUSCH-TimeDomainResourceAllocation>
+                                <k2>4</k2>
+                                <mappingType><typeB/></mappingType>
+                                <startSymbolAndLength>55</startSymbolAndLength>
+                            </PUSCH-TimeDomainResourceAllocation>
+                            <PUSCH-TimeDomainResourceAllocation>
+                                <k2>4</k2>
+                                <mappingType><typeB/></mappingType>
+                                <startSymbolAndLength>38</startSymbolAndLength>
+                            </PUSCH-TimeDomainResourceAllocation>
+                            <PUSCH-TimeDomainResourceAllocation>
+                                <k2>7</k2>
+                                <mappingType><typeB/></mappingType>
+                                <startSymbolAndLength>38</startSymbolAndLength>
+                            </PUSCH-TimeDomainResourceAllocation>
+                        </pusch-TimeDomainAllocationList>
+                        <msg3-DeltaPreamble>6</msg3-DeltaPreamble>
+                        <p0-NominalWithGrant>-96</p0-NominalWithGrant>
+                    </setup>
+                </pusch-ConfigCommon>
+                <pucch-ConfigCommon>
+                    <setup>
+                        <pucch-ResourceCommon>0</pucch-ResourceCommon>
+                        <pucch-GroupHopping><neither/></pucch-GroupHopping>
+                        <hoppingId>0</hoppingId>
+                        <p0-nominal>-76</p0-nominal>
+                    </setup>
+                </pucch-ConfigCommon>
+            </initialUplinkBWP>
+            <timeAlignmentTimerCommon><infinity/></timeAlignmentTimerCommon>
+        </uplinkConfigCommon>
+        <n-TimingAdvanceOffset><n25600/></n-TimingAdvanceOffset>
+        <ssb-PositionsInBurst>
+            <inOneGroup>
+                10000000
+            </inOneGroup>
+        </ssb-PositionsInBurst>
+        <ssb-PeriodicityServingCell><ms20/></ssb-PeriodicityServingCell>
+        <tdd-UL-DL-ConfigurationCommon>
+            <referenceSubcarrierSpacing><kHz30/></referenceSubcarrierSpacing>
+            <pattern1>
+                <dl-UL-TransmissionPeriodicity><ms2p5/></dl-UL-TransmissionPeriodicity>
+                <nrofDownlinkSlots>3</nrofDownlinkSlots>
+                <nrofDownlinkSymbols>6</nrofDownlinkSymbols>
+                <nrofUplinkSlots>1</nrofUplinkSlots>
+                <nrofUplinkSymbols>4</nrofUplinkSymbols>
+            </pattern1>
+        </tdd-UL-DL-ConfigurationCommon>
+        <ss-PBCH-BlockPower>-25</ss-PBCH-BlockPower>
+    </servingCellConfigCommon>
+    <ue-TimersAndConstants>
+        <t300><ms400/></t300>
+        <t301><ms400/></t301>
+        <t310><ms2000/></t310>
+        <n310><n10/></n310>
+        <t311><ms3000/></t311>
+        <n311><n1/></n311>
+        <t319><ms400/></t319>
+    </ue-TimersAndConstants>
+</SIB1>
+[NR_RRC]   do_SIB23_NR, size 9 
+ [0m[NR_RRC]   Done init_NR_SI
+[0m[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[0m[NR_MAC]   config_common() dl_BandwidthP:100
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
+[0m[NR_MAC]   Computing frequency (pointA 642816 => 3642240 KHz (freq_min 3300000 KHz, NR band 78 N_OFFs 620000))
+[0m[NR_MAC]   config_common() dl_BandwidthP:100
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
+[0m[NR_MAC]   Computing frequency (pointA 642816 => 3642240 KHz (freq_min 3300000 KHz, NR band 78 N_OFFs 620000))
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_MAC]   Set RX antenna number to 2, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   Setting TDD configuration period to 5
+[0m[NR_MAC]   TDD has been properly configurated
+[0m[PHY]   DL frequency 3691380000 Hz, UL frequency 3691380000 Hz: band 77, uldl offset 0 Hz
+[0m[32m[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 3691380000, UL freq 3691380000)
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 273, Ncp 0
+[0m[93m[PHY]   Init: N_RB_DL 273, first_carrier_offset 2458, nb_prefix_samples 288,nb_prefix_samples0 352, ofdm_symbol_size 4096
+[0m[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3691380000.000000 Hz, Nsymb 28
+[0m[PHY]   Symbol rotation 0/28 => tl 0.000000 (-3212,-32610) (0.265625)
+[0m[PHY]   Symbol rotation 1/28 => tl 0.000036 (30272,12539) (0.937500)
+[0m[PHY]   Symbol rotation 2/28 => tl 0.000072 (-25330,20787) (0.609375)
+[0m[PHY]   Symbol rotation 3/28 => tl 0.000108 (-6393,-32138) (0.281250)
+[0m[PHY]   Symbol rotation 4/28 => tl 0.000143 (31356,9511) (0.953125)
+[0m[PHY]   Symbol rotation 5/28 => tl 0.000179 (-23170,23169) (0.625000)
+[0m[PHY]   Symbol rotation 6/28 => tl 0.000215 (-9512,-31357) (0.296875)
+[0m[PHY]   Symbol rotation 7/28 => tl 0.000250 (32137,6392) (0.968750)
+[0m[PHY]   Symbol rotation 8/28 => tl 0.000286 (-20788,25329) (0.640625)
+[0m[PHY]   Symbol rotation 9/28 => tl 0.000322 (-12540,-30273) (0.312500)
+[0m[PHY]   Symbol rotation 10/28 => tl 0.000357 (32609,3211) (0.984375)
+[0m[PHY]   Symbol rotation 11/28 => tl 0.000393 (-18205,27244) (0.656250)
+[0m[PHY]   Symbol rotation 12/28 => tl 0.000429 (-15447,-28898) (0.328125)
+[0m[PHY]   Symbol rotation 13/28 => tl 0.000464 (32767,-1) (0.000000)
+[0m[PHY]   Symbol rotation 14/28 => tl 0.000500 (-3212,-32610) (0.265625)
+[0m[PHY]   Symbol rotation 15/28 => tl 0.000536 (30272,12539) (0.937500)
+[0m[PHY]   Symbol rotation 16/28 => tl 0.000572 (-25330,20787) (0.609375)
+[0m[PHY]   Symbol rotation 17/28 => tl 0.000608 (-6393,-32138) (0.281250)
+[0m[PHY]   Symbol rotation 18/28 => tl 0.000643 (31356,9511) (0.953125)
+[0m[PHY]   Symbol rotation 19/28 => tl 0.000679 (-23170,23169) (0.625000)
+[0m[PHY]   Symbol rotation 20/28 => tl 0.000715 (-9512,-31357) (0.296875)
+[0m[PHY]   Symbol rotation 21/28 => tl 0.000750 (32137,6392) (0.968750)
+[0m[PHY]   Symbol rotation 22/28 => tl 0.000786 (-20788,25329) (0.640625)
+[0m[PHY]   Symbol rotation 23/28 => tl 0.000822 (-12540,-30273) (0.312500)
+[0m[PHY]   Symbol rotation 24/28 => tl 0.000857 (32609,3211) (0.984375)
+[0m[PHY]   Symbol rotation 25/28 => tl 0.000893 (-18205,27244) (0.656250)
+[0m[PHY]   Symbol rotation 26/28 => tl 0.000929 (-15447,-28898) (0.328125)
+[0m[PHY]   Symbol rotation 27/28 => tl 0.000964 (32767,0) (1.000000)
+[0m[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3691380000.000000 Hz, Nsymb 28
+[0m[PHY]   Symbol rotation 0/28 => tl 0.000000 (-3212,-32610) (0.265625)
+[0m[PHY]   Symbol rotation 1/28 => tl 0.000036 (30272,12539) (0.937500)
+[0m[PHY]   Symbol rotation 2/28 => tl 0.000072 (-25330,20787) (0.609375)
+[0m[PHY]   Symbol rotation 3/28 => tl 0.000108 (-6393,-32138) (0.281250)
+[0m[PHY]   Symbol rotation 4/28 => tl 0.000143 (31356,9511) (0.953125)
+[0m[PHY]   Symbol rotation 5/28 => tl 0.000179 (-23170,23169) (0.625000)
+[0m[PHY]   Symbol rotation 6/28 => tl 0.000215 (-9512,-31357) (0.296875)
+[0m[PHY]   Symbol rotation 7/28 => tl 0.000250 (32137,6392) (0.968750)
+[0m[PHY]   Symbol rotation 8/28 => tl 0.000286 (-20788,25329) (0.640625)
+[0m[PHY]   Symbol rotation 9/28 => tl 0.000322 (-12540,-30273) (0.312500)
+[0m[PHY]   Symbol rotation 10/28 => tl 0.000357 (32609,3211) (0.984375)
+[0m[PHY]   Symbol rotation 11/28 => tl 0.000393 (-18205,27244) (0.656250)
+[0m[PHY]   Symbol rotation 12/28 => tl 0.000429 (-15447,-28898) (0.328125)
+[0m[PHY]   Symbol rotation 13/28 => tl 0.000464 (32767,-1) (0.000000)
+[0m[PHY]   Symbol rotation 14/28 => tl 0.000500 (-3212,-32610) (0.265625)
+[0m[PHY]   Symbol rotation 15/28 => tl 0.000536 (30272,12539) (0.937500)
+[0m[PHY]   Symbol rotation 16/28 => tl 0.000572 (-25330,20787) (0.609375)
+[0m[PHY]   Symbol rotation 17/28 => tl 0.000608 (-6393,-32138) (0.281250)
+[0m[PHY]   Symbol rotation 18/28 => tl 0.000643 (31356,9511) (0.953125)
+[0m[PHY]   Symbol rotation 19/28 => tl 0.000679 (-23170,23169) (0.625000)
+[0m[PHY]   Symbol rotation 20/28 => tl 0.000715 (-9512,-31357) (0.296875)
+[0m[PHY]   Symbol rotation 21/28 => tl 0.000750 (32137,6392) (0.968750)
+[0m[PHY]   Symbol rotation 22/28 => tl 0.000786 (-20788,25329) (0.640625)
+[0m[PHY]   Symbol rotation 23/28 => tl 0.000822 (-12540,-30273) (0.312500)
+[0m[PHY]   Symbol rotation 24/28 => tl 0.000857 (32609,3211) (0.984375)
+[0m[PHY]   Symbol rotation 25/28 => tl 0.000893 (-18205,27244) (0.656250)
+[0m[PHY]   Symbol rotation 26/28 => tl 0.000929 (-15447,-28898) (0.328125)
+[0m[PHY]   Symbol rotation 27/28 => tl 0.000964 (32767,0) (1.000000)
+[0m[PHY]   Timeshift symbol rotation 0 => (32767,0) 0.000000
+[0m[PHY]   Timeshift symbol rotation 1 => (32717,1809) -0.055223
+[0m[PHY]   Timeshift symbol rotation 2 => (32567,3612) -0.110447
+[0m[PHY]   Timeshift symbol rotation 3 => (32318,5404) -0.165670
+[0m[PHY]   Timeshift symbol rotation 4 => (31971,7179) -0.220893
+[0m[PHY]   Timeshift symbol rotation 5 => (31526,8933) -0.276117
+[0m[PHY]   Timeshift symbol rotation 6 => (30985,10659) -0.331340
+[0m[PHY]   Timeshift symbol rotation 7 => (30349,12353) -0.386563
+[0m[PHY]   Timeshift symbol rotation 8 => (29621,14010) -0.441786
+[0m[PHY]   Timeshift symbol rotation 9 => (28803,15623) -0.497010
+[0m[PHY]   gNB 0 configured
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 0 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 1 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 2 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 3 DL 1 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 4 DL 0 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 5 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 6 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 7 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 8 DL 1 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 9 DL 0 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 10 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 11 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 12 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 13 DL 1 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 14 DL 0 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 15 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 16 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 17 DL 1 UL 0
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 18 DL 1 UL 1
+[0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 19 DL 0 UL 1
+[0m[ITTI]   Created Posix thread TASK_RRC_GNB
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 192.168.8.29, port : 2152
+[0m[GTPU]   Initializing UDP for local address 192.168.8.29 with port 2152
+[0m[GTPU]   Created gtpu instance id: 100
+[0m[UTIL]   threadCreate for TASK_GTPV1_U, affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_GTPV1_U
+[0m[PHY]   Initializing gNB 0 single_thread_flag:1
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Registering with MAC interface module (before 0x2cd43a0)
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   Registering with MAC interface module (after 0x2cd43a0)
+[0m[PHY]   Setting indication lists
+[0m[PHY]   [nr-gnb.c] gNB structure allocated
+[0m[PHY]   Setting clock source to internal
+[0m[PHY]   Setting time source to internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 64
+[0m[1;31m[PHY]   DJP - delete code above this ../../../executables/nr-ru.c:1763
+[0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+[0mDL frequency 3691380000: band 77, UL frequency 3691380000
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads single_thread_flag:1 wait_for_sync:0
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+[LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
+Set RU mask to 1
+Creating RC.ru[0]:0x2d1da00
+RU 0: Transport raw_if4p5
+[RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
+[RU 0] Setting half-slot parallelization to 1
+[LIBCONFIG] device.recplay: 8/8 parameters successfully set, (8 to default value)
+[LIBCONFIG] device: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] loader: 2/2 parameters successfully set, (2 to default value)
+[LIBCONFIG] loader.oai_transpro: 2/2 parameters successfully set, (1 to default value)
+shlib_path liboai_transpro.so
+[LOADER] library liboai_transpro.so successfully loaded
+UP_VF [0000:3b:0a.1], CP_VF [0000:3b:0a.0]
+wrapper.hpp: m_xranInit.io_cfg.dpdk_dev[0] =0000:3b:0a.1, m_xranInit.io_cfg.dpdk_dev[1]=0000:3b:0a.0
+*** Numerology [] 
+*** Number of Slot [20] 
+*** IQ Width []
+*** Compression Method [ ]
+ORAN: transport_init
+Machine is not synchronized using PTP (1)!
+O-DU MAC address: 00:11:22:33:44:66
+O-RU MAC address: FFFFFF98:FFFFFFAE:71:01:64:FFFFFFD8
+eAxCID - 12:8:4:0 (f000, 0f00, 00f0, 000f)
+Total BF Weights : 32
+ xran_init: MTU 8870
+total cores 64 c_mask 0x7 core 1 [id] system_core 0 [id] pkt_proc_core 0x4 [mask] pkt_aux_core 1 [id] timing_core 1 [id]
+xran_ethdi_init_dpdk_io: Calling rte_eal_init:wls -c 0x7 -n2 --iova-mode=pa --socket-mem=8192 --socket-limit=8192 --proc-type=auto --file-prefix wls -w 0000:00:00.0   
+
+Run time: 0h 107s
+	Time executing user inst.: 0s 113773us
+	Time executing system inst.: 1s 89277us
+	Max. Phy. memory usage: 1750108kB
+	Page fault number (no io): 422991
+	Page fault number (requiring io): 0
+	Number of file system read: 0
+	Number of filesystem write: 112
+	Number of context switch (process origin, io...): 320
+	Number of context switch (os origin, priority...): 1561
+Linux signal Interrupt...
+../../../executables/softmodem-common.c:219 signal_handler() Exiting OAI softmodem: softmodem starting exit procedure
+
+ORAN: trx_oran_end
+
