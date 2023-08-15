@@ -29,7 +29,7 @@ WATCHDOG="nmi_watchdog=0 softlockup_panic=0"
 
 
 # Scheduling parameters
-CPU_RANGE="0-2,8-15"
+CPU_RANGE="2-5,8-15"
 SCHED="skew_tick=1 isolcpus=managed_irq,domain,${CPU_RANGE} nohz_full=${CPU_RANGE} rcu_nocbs=${CPU_RANGE} rcu_nocb_poll"
 
 # Reconstruct parameter string
