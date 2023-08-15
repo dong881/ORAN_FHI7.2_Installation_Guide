@@ -3,7 +3,7 @@
 # cd ~
 cd ./openairinterface5g/cmake_targets/
 
-echo "install lack lib from build rpm…"
+echo "--> install lack lib from build rpm…"
 
 # sudo yum install atlas-devel
 yum install -y wget
@@ -21,4 +21,9 @@ wget https://vault.centos.org/centos/8/PowerTools/x86_64/os/Packages/blas-devel-
 yum -y localinstall blas-devel-3.8.0-8.el8.x86_64.rpm
 yum -y localinstall lapack-devel-3.8.0-8.el8.x86_64.rpm 
 yum -y install python27
+
+echo "--> install success"
+
+echo "--> Download the DPDK folder where -fPIC has already been added to CFLAGS in all makefiles and overwrite it."
+
 

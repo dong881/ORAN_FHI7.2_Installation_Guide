@@ -27,8 +27,10 @@ SECURITY="selinux=0 enforcing=0 audit=0"
 # Watchdog parameters
 WATCHDOG="nmi_watchdog=0 softlockup_panic=0"
 
+
 # Scheduling parameters
-SCHED="skew_tick=1 isolcpus=managed_irq,domain,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 nohz_full=0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 rcu_nocbs=0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 rcu_nocb_poll"
+CPU_RANGE="0-2,8-17"
+SCHED="skew_tick=1 isolcpus=managed_irq,domain,${CPU_RANGE} nohz_full=${CPU_RANGE} rcu_nocbs=${CPU_RANGE} rcu_nocb_poll"
 
 # Reconstruct parameter string
 NEW_PARAMS="$PCI $IOMMU $CPU $MEM $IDLE $HPAGES $SECURITY $WATCHDOG $SCHED"
