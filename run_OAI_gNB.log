@@ -49,14 +49,14 @@
 [0m[ITTI]   Starting itti queue: TASK_NAS_NRUE as task 45
 [0m[OPT]   OPT disabled
 [0m[HW]   Version: Branch: use_msgq Abrev. Hash: ffee14b30c Date: Tue Mar 21 10:50:40 2023 +0100
-[0m[NR_PHY]   RC.gNB = 0x3715730
+[0m[NR_PHY]   RC.gNB = 0x3381730
 [0m[NR_PHY]   PRB blacklist 
 [0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
 [0m[PHY]   TX_AMP = 10361 (-10 dBFS)
 [0m[PHY]   L1_RX_THREAD_CORE -1 (17)
 [0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
-[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x371a3b0
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x33863b0
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[PHY]   create_gNB_tasks() Task ready initialize structures
 [0m[NR_PHY]   PRB blacklist 
@@ -67,7 +67,7 @@
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[PHY]   -----------------------------------------
-[0m[PHY]   PRS Config for gNB_id 0 @ 0x7f6a407c6cf4
+[0m[PHY]   PRS Config for gNB_id 0 @ 0x7ff0f2f4acf4
 [0m[PHY]   -----------------------------------------
 [0m[PHY]   NumPRSResources 	0
 [0m[PHY]   PRSResourceSetPeriod 	[0, 0]
@@ -95,7 +95,7 @@
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
 [0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[0m[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x3730f10
+[0m[PHY]   create_gNB_tasks() RC.nb_nr_inst:1 RC.nrrrc:0x339cf10
 [0mCMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf" "--sa" "--reorder-thread-disable" 
 [CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf [LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF
 [CONFIG] function config_libconfig_init returned 0
@@ -119,7 +119,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 3/3 parameters successfully set, (3 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.893391 
+CPU Freq is 2.893389 
 [LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
@@ -150,7 +150,7 @@ Initializing northbound interface for L1
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
-[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x3734430 (1 of 1)
+[PHY]   create_gNB_tasks() Creating RRC instance RC.nrrrc[0]:0x33a0430 (1 of 1)
 [0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 643392, DLBand 78, ABSFREQPOINTA 642816, DLBW 273,RACH_TargetReceivedPower -96
 [0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -175,19 +175,22 @@ Initializing northbound interface for L1
 [0m[X2AP]   X2AP is disabled.
 [0m[UTIL]   threadCreate for TASK_NGAP, affinity ffffffff, priority 50
 [0m[NGAP]   Starting NGAP layer
+[0m[ITTI]   Created Posix thread TASK_NGAP
 [0m[NGAP]   Registered new gNB[0] and macro gNB id 3584
 [0m[NGAP]   [gNB 0] check the amf registration state
-[0m[ITTI]   Created Posix thread TASK_NGAP
 [0m[1;31m[SCTP]   SCTP_ASSOC_CHANGE to SCTP_CANT_STR_ASSOC
 [0m[1;31m[SCTP]   sctp_recvmsg (fd 99, len -1 ): Connection refused:111
 [0m[93m[NGAP]   Received unsuccessful result for SCTP association (3), instance 0, cnx_id 1
 [0m[UTIL]   threadCreate for TASK_GNB_APP, affinity ffffffff, priority 50
-[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 0
 [0m[ITTI]   Created Posix thread TASK_GNB_APP
 [0m[NR_RRC]   Creating NR RRC gNB Task, that will also create TASKS
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 0
 [0m[UTIL]   threadCreate for TASK_RRC_GNB, affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_RRC_GNB
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
 [0m[NR_RRC]   Entering main loop of NR_RRC message task
-[0m[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x3735360
+[0m[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x33a1360
 [0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
 [0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)
 [0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
@@ -224,6 +227,11 @@ NRRRC 0: Southbound Transport local_mac
 [LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 [LIBCONFIG] list gNBs.[0].E1_INTERFACE not found in config file ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/oran.fh.band78.fr1.273PRB.conf 
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
 <SIB1>
     <cellSelectionInfo>
         <q-RxLevMin>-65</q-RxLevMin>
@@ -607,9 +615,6 @@ NRRRC 0: Southbound Transport local_mac
 [0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 17 DL 1 UL 0
 [0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 18 DL 1 UL 1
 [0m[NR_MAC]   In rrc_mac_config_req_gNB: slot 19 DL 0 UL 1
-[0m[ITTI]   Created Posix thread TASK_RRC_GNB
-[0m[GTPU]   Configuring GTPu
-[0m[GTPU]   SA mode 
 [0m[GTPU]   Configuring GTPu address : 192.168.8.29, port : 2152
 [0m[GTPU]   Initializing UDP for local address 192.168.8.29 with port 2152
 [0m[GTPU]   Created gtpu instance id: 99
@@ -617,9 +622,9 @@ NRRRC 0: Southbound Transport local_mac
 [0m[ITTI]   Created Posix thread TASK_GTPV1_U
 [0m[PHY]   Initializing gNB 0 single_thread_flag:1
 [0m[PHY]   Initializing gNB 0
-[0m[PHY]   Registering with MAC interface module (before 0x371a3b0)
+[0m[PHY]   Registering with MAC interface module (before 0x33863b0)
 [0m[PHY]   Installing callbacks for IF_Module - UL_indication
-[0m[PHY]   Registering with MAC interface module (after 0x371a3b0)
+[0m[PHY]   Registering with MAC interface module (after 0x33863b0)
 [0m[PHY]   Setting indication lists
 [0m[PHY]   [nr-gnb.c] gNB structure allocated
 [0m[PHY]   Setting clock source to internal
@@ -628,11 +633,6 @@ NRRRC 0: Southbound Transport local_mac
 [0m[1;31m[PHY]   DJP - delete code above this ../../../executables/nr-ru.c:1763
 [0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
 [0mDL frequency 3691380000: band 77, UL frequency 3691380000
-[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
-[LIBCONFIG] gNBs.[0]: 28/28 parameters successfully set, (17 to default value)
-[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
-[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
-[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
 START MAIN THREADS
 RC.nb_nr_L1_inst:1
 Initializing gNB threads single_thread_flag:1 wait_for_sync:0
@@ -644,7 +644,7 @@ Initializing RU threads
 configuring RU from file
 [LIBCONFIG] RUs.[0]: 42/42 parameters successfully set, (27 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x37639e0
+Creating RC.ru[0]:0x33cf9e0
 RU 0: Transport raw_if4p5
 [RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
 [RU 0] Setting half-slot parallelization to 1
@@ -667,12 +667,12 @@ EAL: Multi-process socket /var/run/dpdk/wls/mp_socket
 EAL: Selected IOVA mode 'PA'
 EAL: No available hugepages reported in hugepages-2048kB
 ORAN: transport_init
-Machine is not synchronized using PTP (1)!
+Machine is synchronized using PTP!
 O-DU MAC address: 00:11:22:33:44:66
-O-RU MAC address: FFFFFF98:FFFFFFAE:71:01:64:FFFFFFD8
+O-RU MAC address: 00:FFFFFFAA:FFFFFFFF:FFFFFFBB:FFFFFFFF:FFFFFFCC
 eAxCID - 12:8:4:0 (f000, 0f00, 00f0, 000f)
 Total BF Weights : 32
- xran_init: MTU 8870
+ xran_init: MTU 1500
 total cores 32 c_mask 0x7 core 1 [id] system_core 0 [id] pkt_proc_core 0x4 [mask] pkt_aux_core 1 [id] timing_core 1 [id]
 xran_ethdi_init_dpdk_io: Calling rte_eal_init:wls -c 0x7 -n2 --iova-mode=pa --socket-mem=8192 --socket-limit=8192 --proc-type=auto --file-prefix wls -w 0000:00:00.0   
 EAL: Probing VFIO support...
@@ -694,40 +694,40 @@ Port 1: nb_rxd 4096 nb_txd 4096
 Checking link status portid [1]   ... done
 Port 1 Link Up - speed 10000 Mbps - full-duplex
 vf 0 local  SRC MAC: 00 11 22 33 44 66
-vf 0 remote DST MAC: 98 ae 71 01 64 d8
+vf 0 remote DST MAC: 00 aa ff bb ff cc
 vf 1 local  SRC MAC: 00 11 22 33 44 66
-vf 1 remote DST MAC: 98 ae 71 01 64 d8
+vf 1 remote DST MAC: 00 aa ff bb ff cc
 wrapper.hpp: nFpgaToSW_FTH_RxBufferLen=13168 , nSW_ToFpga_FTH_TxBufferLen=15696
 XRAN front haul xran_mm_init
-xran_sector_get_instances [0]: CC 0 handle 0x37d3040
-Handle: 0x7f69d7b6bc70 Instance: 0x37d3040
-init_memory [0]: CC 0 handle 0x37d3040
+xran_sector_get_instances [0]: CC 0 handle 0x343f040
+Handle: 0x7ff084578c70 Instance: 0x343f040
+init_memory [0]: CC 0 handle 0x343f040
 Sucess xran_mm_init
 wrapper.hpp: Init memory *** XRANFTHTX_OUT ***
 Call xran_bm_init 0
-ru_0_cc_0_idx_0: [ handle 0x37d3040 0 0 ] [nPoolIndex 0] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 0] mb pool 0x2ea4f6b00 
+ru_0_cc_0_idx_0: [ handle 0x343f040 0 0 ] [nPoolIndex 0] nNumberOfBuffers 1120 nBufferSize 15696
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 0] mb pool 0x2ea4f6b00 
 wrapper.hpp: Init memory *** XRANFTHTX_SEC_DESC_OUT ***
-ru_0_cc_0_idx_1: [ handle 0x37d3040 0 0 ] [nPoolIndex 1] nNumberOfBuffers 17920 nBufferSize 24
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 1] mb pool 0x2e9220fc0 
+ru_0_cc_0_idx_1: [ handle 0x343f040 0 0 ] [nPoolIndex 1] nNumberOfBuffers 17920 nBufferSize 24
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 1] mb pool 0x2e9220fc0 
 wrapper.hpp: Init memory *** XRANFTHTX_PRB_MAP_OUT ***
-ru_0_cc_0_idx_2: [ handle 0x37d3040 0 0 ] [nPoolIndex 2] nNumberOfBuffers 1120 nBufferSize 48416
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 2] mb pool 0x2e8686980 
+ru_0_cc_0_idx_2: [ handle 0x343f040 0 0 ] [nPoolIndex 2] nNumberOfBuffers 1120 nBufferSize 48416
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 2] mb pool 0x2e8686980 
 wrapper.hpp: Init memory *** XRANFTHRX_IN ***
-ru_0_cc_0_idx_3: [ handle 0x37d3040 0 0 ] [nPoolIndex 3] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 3] mb pool 0x2e50a8e40 
+ru_0_cc_0_idx_3: [ handle 0x343f040 0 0 ] [nPoolIndex 3] nNumberOfBuffers 1120 nBufferSize 15696
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 3] mb pool 0x2e50a8e40 
 wrapper.hpp: Init memory *** XRANFTHTX_SEC_DESC_IN ***
-ru_0_cc_0_idx_4: [ handle 0x37d3040 0 0 ] [nPoolIndex 4] nNumberOfBuffers 17920 nBufferSize 24
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 4] mb pool 0x2e3dd3300 
+ru_0_cc_0_idx_4: [ handle 0x343f040 0 0 ] [nPoolIndex 4] nNumberOfBuffers 17920 nBufferSize 24
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 4] mb pool 0x2e3dd3300 
 wrapper.hpp: Init memory *** XRANFTHRX_PRB_MAP_IN ***
-ru_0_cc_0_idx_5: [ handle 0x37d3040 0 0 ] [nPoolIndex 5] nNumberOfBuffers 1120 nBufferSize 48416
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 5] mb pool 0x2e3238cc0 
+ru_0_cc_0_idx_5: [ handle 0x343f040 0 0 ] [nPoolIndex 5] nNumberOfBuffers 1120 nBufferSize 48416
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 5] mb pool 0x2e3238cc0 
 wrapper.hpp: Init memory *** XRANFTHRACH_IN ***
-ru_0_cc_0_idx_6: [ handle 0x37d3040 0 0 ] [nPoolIndex 6] nNumberOfBuffers 1120 nBufferSize 8192
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 6] mb pool 0x2dfc5b180 
+ru_0_cc_0_idx_6: [ handle 0x343f040 0 0 ] [nPoolIndex 6] nNumberOfBuffers 1120 nBufferSize 8192
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 6] mb pool 0x2dfc5b180 
 wrapper.hpp: Init memory *** XRANSRS_IN ***
-ru_0_cc_0_idx_7: [ handle 0x37d3040 0 0 ] [nPoolIndex 7] nNumberOfBuffers 1120 nBufferSize 15696
-CC:[ handle 0x37d3040 ru 0 cc_idx 0 ] [nPoolIndex 7] mb pool 0x2df175340 
+ru_0_cc_0_idx_7: [ handle 0x343f040 0 0 ] [nPoolIndex 7] nNumberOfBuffers 1120 nBufferSize 15696
+CC:[ handle 0x343f040 ru 0 cc_idx 0 ] [nPoolIndex 7] mb pool 0x2df175340 
 INIT DONE
 [HW]   [RAU] has loaded ETHERNET trasport protocol.
 [0m[PHY]   Starting ru_thread 0
@@ -752,11 +752,11 @@ INIT DONE
 [0m[PHY]   Channel 1: setting tx_gain offset 0, rx_gain offset 0, tx_freq 3691380000 Hz, rx_freq 3691380000 Hz, tune_offset 0 Hz, sample_rate 122880000 Hz
 [0m[PHY]   Initializing RU signal buffers (if_south IF4p5 RRU) nb_tx 2, nb_rx 1
 [0m[PHY]   nb_tx 2
-[0m[PHY]   rxdata_7_5kHz[0] 0x7f69c408c040 for RU 0
-[0m[PHY]   [INIT] common.txdata_BF= 0x7f69b40009e0 (16 bytes)
-[0m[PHY]   txdataF_BF[0] 0x7f69b4000a20 for RU 0
-[0m[PHY]   txdataF_BF[1] 0x7f69b4070a80 for RU 0
-[0m[PHY]   rxdataF[0] 0x7f69b40e0b80 for RU 0
+[0m[PHY]   rxdata_7_5kHz[0] 0x7ff0f03d7040 for RU 0
+[0m[PHY]   [INIT] common.txdata_BF= 0x7ff05c0009e0 (16 bytes)
+[0m[PHY]   txdataF_BF[0] 0x7ff05c000a20 for RU 0
+[0m[PHY]   txdataF_BF[1] 0x7ff05c070a80 for RU 0
+[0m[PHY]   rxdataF[0] 0x7ff05c0e0b80 for RU 0
 [0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
 [0m[PHY]   Starting IF interface for RU 0, nb_rx 1
 [0m[PHY]   RU 0 Setting N_TA_offset to 1600 samples (factor 4.000000, UL Freq 3642240, N_RB 273, mu 1)
@@ -764,7 +764,7 @@ INIT DONE
 [0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:00
 [0m[PHY]   RUs configured
 [0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
-[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7f6a404f2010
+[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7ff0f2c76010
 [0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
 [0m[PHY]   Initialise nr transport
 [0m[PHY]   Allocating Transport Channel Buffers for PUCCH 0/32
@@ -888,15 +888,15 @@ PRACH start symbol 0 lastsymbol 11
 xran_open: interval_us=500
 XRAN_UP_VF: 0x0000
 XRAN_CP_VF: 0x0001
-xran_timing_source_thread [CPU  1] [PID:   8013]
+xran_timing_source_thread [CPU  1] [PID:  46414]
 xran_open. Done
-ring_processing_thread [CPU  2] [PID:   8013]
+ring_processing_thread [CPU  2] [PID:  46414]
 openair0_transport_init returns 0 for ru_id 0
 ORAN: get_internal_parameter
 ORAN: get_internal_parameter
 ORAN: trx_oran_start
 Start ORAN. Done
-setup_RU_buffers: frame_parms = 0x3769490
+setup_RU_buffers: frame_parms = 0x33d5490
 waiting for sync (ru_thread,-1/0x12a8a14,0x20319e0,0x1f26f00)
 wait RUs
 ALL RUs READY!
@@ -909,7 +909,7 @@ shlib_path libdfts.so
 [LIBCONFIG] loader.ldpc: 2/2 parameters successfully set, (1 to default value)
 shlib_path libldpc.so
 [LOADER] library libldpc.so successfully loaded
-O-DU: thread_run start time: 08/15/23 15:13:00.000000007 UTC [500]
+O-DU: thread_run start time: 08/21/23 13:44:07.000000001 UTC [500]
 Start C-plane DL 30 us after TTI  [trigger on sym 1]
 Start C-plane UL 71 us after TTI  [trigger on sym 2]
 Start U-plane DL 350 us before OTA [offset  in sym -9]
@@ -917,8 +917,6 @@ Start U-plane UL 180 us OTA        [offset  in sym 6]
 C-plane to U-plane delay 320 us after TTI
 Start Sym timer 71428 ns
 interval_us 500
-first_call set from phy cb first_call_set=0x7f69d8e33201
-first_rx is set
 create a thread for core -1
 create a thread for core -1
 create a thread for core -1
@@ -934,9 +932,9 @@ got sync (L1_stats_thread)
 got sync (ru_thread)
 [PHY]   RU 0 no rf device
 [0m[PHY]   RU 0 RF started opp_enabled 0
-[0m[PHY]   before adjusting, OAI: frame=0 slot=0, XRAN: frame=43 slot=13
-[0m[PHY]   After adjusting, OAI: frame=43 slot=13, XRAN: frame=43 slot=13
-[0m[1;31m[PHY]   Received Timestamp doesn't correspond to the time we think it is (proc->frame_rx.proc->tti_rx 43.16, slot 15)
+[0m[PHY]   before adjusting, OAI: frame=0 slot=0, XRAN: frame=0 slot=1
+[0m[PHY]   After adjusting, OAI: frame=0 slot=1, XRAN: frame=0 slot=1
+[0m[1;31m[PHY]   Received Timestamp doesn't correspond to the time we think it is (proc->frame_rx.proc->tti_rx 0.4, slot 3)
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -953,7 +951,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -970,7 +968,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -987,7 +985,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1004,7 +1002,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1021,7 +1019,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1038,7 +1036,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1055,7 +1053,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1072,7 +1070,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1089,7 +1087,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1106,7 +1104,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1123,7 +1121,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1140,7 +1138,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1157,7 +1155,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1174,7 +1172,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1191,7 +1189,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1208,7 +1206,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1225,7 +1223,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1242,7 +1240,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1259,7 +1257,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1276,7 +1274,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1293,7 +1291,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1310,7 +1308,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1327,7 +1325,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1344,7 +1342,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1361,7 +1359,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1378,7 +1376,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1395,7 +1393,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1412,7 +1410,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1429,7 +1427,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1446,7 +1444,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1463,7 +1461,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1480,7 +1478,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1497,7 +1495,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1514,7 +1512,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1531,7 +1529,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1548,7 +1546,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1565,7 +1563,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1582,7 +1580,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1599,7 +1597,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1616,7 +1614,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1633,7 +1631,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1650,7 +1648,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1667,7 +1665,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1684,7 +1682,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1701,7 +1699,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1718,7 +1716,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1735,7 +1733,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1752,7 +1750,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1769,7 +1767,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1786,7 +1784,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1803,7 +1801,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1820,7 +1818,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1837,7 +1835,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1854,7 +1852,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.5 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1871,7 +1869,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1888,7 +1886,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1905,7 +1903,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1922,7 +1920,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1939,7 +1937,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1956,7 +1954,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1973,7 +1971,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -1990,7 +1988,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2007,7 +2005,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.5 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2024,7 +2022,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2041,7 +2039,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2058,7 +2056,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2075,7 +2073,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2092,7 +2090,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2109,7 +2107,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.5 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2126,7 +2124,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2143,7 +2141,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2160,7 +2158,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2177,7 +2175,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2194,7 +2192,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2211,7 +2209,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2228,7 +2226,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2245,7 +2243,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2262,7 +2260,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2279,7 +2277,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2296,7 +2294,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2313,7 +2311,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2330,7 +2328,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2347,7 +2345,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2364,7 +2362,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2381,7 +2379,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2398,7 +2396,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2415,7 +2413,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2432,7 +2430,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2449,7 +2447,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2466,7 +2464,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2483,7 +2481,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2500,7 +2498,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2517,7 +2515,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2534,7 +2532,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2551,7 +2549,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2568,7 +2566,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2585,7 +2583,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2602,7 +2600,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2619,7 +2617,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2636,7 +2634,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2653,7 +2651,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2670,7 +2668,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2687,7 +2685,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2704,7 +2702,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.5 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2721,7 +2719,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2738,7 +2736,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2755,7 +2753,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2772,7 +2770,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2789,7 +2787,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2806,7 +2804,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.9 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2823,7 +2821,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2840,7 +2838,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.4 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2857,7 +2855,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.5 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2874,7 +2872,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2891,7 +2889,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.2 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2908,7 +2906,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2925,7 +2923,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2942,7 +2940,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2959,7 +2957,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2976,7 +2974,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.8 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -2993,7 +2991,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.3 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -3010,7 +3008,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.7 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -3027,7 +3025,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 0.6 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -3044,7 +3042,7 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.1 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
@@ -3061,746 +3059,606 @@ got sync (ru_thread)
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 1.0 dB
 [0m[NR_MAC]   Frame.Slot 128.0
 
 [0m[NR_MAC]   Frame.Slot 256.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 337, slot 19 Initiating RA procedure with preamble 6, energy 14.1 dB (I0 17, thres 120), delay 3 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 337, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:337/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 337 Activating Msg2 generation in frame 338, slot 8 using RA rnti 10b SSB, new rnti 3f6e index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 338, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 338 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 338, Subframe 8: rnti 3f6e RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   handle harq for rnti 3f6e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 339, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (339,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   handle harq for rnti 3f6e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 340, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (340,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   handle harq for rnti 3f6e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 340, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (341,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x3f6e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3f6e
+[0m[93m[NR_MAC]   handle harq for rnti 3f6e, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x3f6e in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x3f6e
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 384.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 440, slot 19 Initiating RA procedure with preamble 10, energy 13.4 dB (I0 7, thres 120), delay 1 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 440, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:440/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 440 Activating Msg2 generation in frame 441, slot 8 using RA rnti 10b SSB, new rnti 17f8 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 441, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 441 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 441, Subframe 8: rnti 17f8 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   handle harq for rnti 17f8, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 442, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (442,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   handle harq for rnti 17f8, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 443, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (443,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   handle harq for rnti 17f8, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 443, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (444,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x17f8
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 17f8
+[0m[93m[NR_MAC]   handle harq for rnti 17f8, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x17f8 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x17f8
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 512.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 513, slot 19 Initiating RA procedure with preamble 23, energy 14.6 dB (I0 7, thres 120), delay 61 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 513, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:513/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 513 Activating Msg2 generation in frame 514, slot 8 using RA rnti 10b SSB, new rnti ce53 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 514, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 514 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 514, Subframe 8: rnti ce53 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   handle harq for rnti ce53, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 515, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (515,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   handle harq for rnti ce53, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 516, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (516,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   handle harq for rnti ce53, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 516, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (517,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0xce53
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): ce53
+[0m[93m[NR_MAC]   handle harq for rnti ce53, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0xce53 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0xce53
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 529, slot 19 Initiating RA procedure with preamble 20, energy 14.3 dB (I0 12, thres 120), delay 29 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 529, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:529/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 529 Activating Msg2 generation in frame 530, slot 8 using RA rnti 10b SSB, new rnti 4a3b index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 530, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 530 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 530, Subframe 8: rnti 4a3b RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   handle harq for rnti 4a3b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 531, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (531,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   handle harq for rnti 4a3b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 532, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (532,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   handle harq for rnti 4a3b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 532, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (533,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x4a3b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 4a3b
+[0m[93m[NR_MAC]   handle harq for rnti 4a3b, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x4a3b in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x4a3b
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 640.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 713, slot 19 Initiating RA procedure with preamble 3, energy 13.8 dB (I0 10, thres 120), delay 5 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 713, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:713/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 713 Activating Msg2 generation in frame 714, slot 8 using RA rnti 10b SSB, new rnti 967e index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 714, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 714 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 714, Subframe 8: rnti 967e RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   handle harq for rnti 967e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 715, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (715,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   handle harq for rnti 967e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 716, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (716,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   handle harq for rnti 967e, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 716, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (717,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x967e
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 967e
+[0m[93m[NR_MAC]   handle harq for rnti 967e, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x967e in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x967e
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 730, slot 19 Initiating RA procedure with preamble 58, energy 13.6 dB (I0 14, thres 120), delay 54 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 730, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:730/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 730 Activating Msg2 generation in frame 731, slot 8 using RA rnti 10b SSB, new rnti c21c index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 731, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 731 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 731, Subframe 8: rnti c21c RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   handle harq for rnti c21c, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 732, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (732,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   handle harq for rnti c21c, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 733, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (733,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   handle harq for rnti c21c, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 733, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (734,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0xc21c
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): c21c
+[0m[93m[NR_MAC]   handle harq for rnti c21c, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0xc21c in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0xc21c
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 736, slot 19 Initiating RA procedure with preamble 4, energy 15.7 dB (I0 36, thres 120), delay 63 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 736, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:736/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 736 Activating Msg2 generation in frame 737, slot 8 using RA rnti 10b SSB, new rnti 3c76 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 737, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 737 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 737, Subframe 8: rnti 3c76 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   handle harq for rnti 3c76, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 738, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (738,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   handle harq for rnti 3c76, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 739, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (739,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   handle harq for rnti 3c76, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 739, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (740,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x3c76
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c76
+[0m[93m[NR_MAC]   handle harq for rnti 3c76, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x3c76 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x3c76
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 768.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 804, slot 19 Initiating RA procedure with preamble 14, energy 14.3 dB (I0 10, thres 120), delay 20 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 804, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:804/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 804 Activating Msg2 generation in frame 805, slot 8 using RA rnti 10b SSB, new rnti 97b7 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 805, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 805 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 805, Subframe 8: rnti 97b7 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   handle harq for rnti 97b7, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 806, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (806,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   handle harq for rnti 97b7, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 807, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (807,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   handle harq for rnti 97b7, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 807, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (808,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x97b7
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 97b7
+[0m[93m[NR_MAC]   handle harq for rnti 97b7, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x97b7 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x97b7
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 896.0
 
 [0m[NR_MAC]   Frame.Slot 0.0
 
-[0m[PHY]   prach_I0 = 0.0 dB
+[0m[PHY]   prach_I0 = 7.6 dB
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 62, slot 19 Initiating RA procedure with preamble 3, energy 16.5 dB (I0 12, thres 120), delay 5 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 62, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:62/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 62 Activating Msg2 generation in frame 63, slot 8 using RA rnti 10b SSB, new rnti 3c6a index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 63, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 63 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 63, Subframe 8: rnti 3c6a RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   handle harq for rnti 3c6a, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 64, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (64,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   handle harq for rnti 3c6a, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 65, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (65,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   handle harq for rnti 3c6a, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 65, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (66,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x3c6a
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3c6a
+[0m[93m[NR_MAC]   handle harq for rnti 3c6a, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x3c6a in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x3c6a
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 128.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 145, slot 19 Initiating RA procedure with preamble 35, energy 14.4 dB (I0 12, thres 120), delay 43 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 145, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:145/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 145 Activating Msg2 generation in frame 146, slot 8 using RA rnti 10b SSB, new rnti bd84 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 146, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 146 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 146, Subframe 8: rnti bd84 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   handle harq for rnti bd84, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 147, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (147,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   handle harq for rnti bd84, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 148, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (148,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   handle harq for rnti bd84, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 148, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (149,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0xbd84
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): bd84
+[0m[93m[NR_MAC]   handle harq for rnti bd84, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0xbd84 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0xbd84
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 159, slot 19 Initiating RA procedure with preamble 4, energy 15.7 dB (I0 15, thres 120), delay 35 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 159, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:159/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 159 Activating Msg2 generation in frame 160, slot 8 using RA rnti 10b SSB, new rnti 8dbe index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 160, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 160 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 160, Subframe 8: rnti 8dbe RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   handle harq for rnti 8dbe, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 161, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (161,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   handle harq for rnti 8dbe, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 162, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (162,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   handle harq for rnti 8dbe, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 162, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (163,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x8dbe
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 8dbe
+[0m[93m[NR_MAC]   handle harq for rnti 8dbe, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x8dbe in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x8dbe
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 174, slot 19 Initiating RA procedure with preamble 43, energy 15.9 dB (I0 12, thres 120), delay 10 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 174, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:174/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 174 Activating Msg2 generation in frame 175, slot 8 using RA rnti 10b SSB, new rnti d7aa index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 175, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 175 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 175, Subframe 8: rnti d7aa RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   handle harq for rnti d7aa, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 176, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (176,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   handle harq for rnti d7aa, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 177, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (177,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   handle harq for rnti d7aa, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 177, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (178,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0xd7aa
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): d7aa
+[0m[93m[NR_MAC]   handle harq for rnti d7aa, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0xd7aa in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0xd7aa
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 256.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 255, slot 19 Initiating RA procedure with preamble 27, energy 15.3 dB (I0 16, thres 120), delay 27 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 255, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:255/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 255 Activating Msg2 generation in frame 256, slot 8 using RA rnti 10b SSB, new rnti 6a95 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 256, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 256 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 256, Subframe 8: rnti 6a95 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   handle harq for rnti 6a95, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 257, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (257,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   handle harq for rnti 6a95, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 258, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (258,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   handle harq for rnti 6a95, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 258, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (259,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x6a95
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 6a95
+[0m[93m[NR_MAC]   handle harq for rnti 6a95, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x6a95 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x6a95
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 259, slot 19 Initiating RA procedure with preamble 49, energy 15.0 dB (I0 23, thres 120), delay 32 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 259, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:259/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 259 Activating Msg2 generation in frame 260, slot 8 using RA rnti 10b SSB, new rnti 462f index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 260, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 260 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 260, Subframe 8: rnti 462f RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   handle harq for rnti 462f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 261, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (261,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   handle harq for rnti 462f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 262, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (262,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   handle harq for rnti 462f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 262, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (263,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x462f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 462f
+[0m[93m[NR_MAC]   handle harq for rnti 462f, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x462f in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x462f
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 384.0
 
 [0m[NR_MAC]   Frame.Slot 512.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 521, slot 19 Initiating RA procedure with preamble 59, energy 13.9 dB (I0 10, thres 120), delay 6 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 521, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:521/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 521 Activating Msg2 generation in frame 522, slot 8 using RA rnti 10b SSB, new rnti 2aa2 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 522, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 522 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 522, Subframe 8: rnti 2aa2 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   handle harq for rnti 2aa2, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 523, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (523,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   handle harq for rnti 2aa2, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 524, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (524,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   handle harq for rnti 2aa2, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 524, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (525,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x2aa2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 2aa2
+[0m[93m[NR_MAC]   handle harq for rnti 2aa2, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x2aa2 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x2aa2
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 531, slot 19 Initiating RA procedure with preamble 10, energy 15.0 dB (I0 22, thres 120), delay 49 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 531, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:531/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 531 Activating Msg2 generation in frame 532, slot 8 using RA rnti 10b SSB, new rnti a99f index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 532, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 532 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 532, Subframe 8: rnti a99f RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   handle harq for rnti a99f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 533, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (533,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   handle harq for rnti a99f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 534, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (534,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   handle harq for rnti a99f, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 534, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (535,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0xa99f
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): a99f
+[0m[93m[NR_MAC]   handle harq for rnti a99f, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0xa99f in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0xa99f
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 636, slot 19 Initiating RA procedure with preamble 56, energy 13.2 dB (I0 10, thres 120), delay 8 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 636, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:636/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 636 Activating Msg2 generation in frame 637, slot 8 using RA rnti 10b SSB, new rnti 7e09 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 637, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 637 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 637, Subframe 8: rnti 7e09 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   handle harq for rnti 7e09, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 638, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (638,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   handle harq for rnti 7e09, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 639, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (639,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   handle harq for rnti 7e09, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 639, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (640,3)
 [0m[NR_MAC]   Frame.Slot 640.0
 
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x7e09
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 7e09
+[0m[93m[NR_MAC]   handle harq for rnti 7e09, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x7e09 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x7e09
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 721, slot 19 Initiating RA procedure with preamble 13, energy 13.4 dB (I0 10, thres 120), delay 59 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 721, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:721/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 721 Activating Msg2 generation in frame 722, slot 8 using RA rnti 10b SSB, new rnti 9ff1 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 722, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 722 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 722, Subframe 8: rnti 9ff1 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   handle harq for rnti 9ff1, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 723, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (723,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   handle harq for rnti 9ff1, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 724, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (724,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   handle harq for rnti 9ff1, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 724, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (725,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x9ff1
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 9ff1
+[0m[93m[NR_MAC]   handle harq for rnti 9ff1, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x9ff1 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x9ff1
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 768.0
 
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 823, slot 19 Initiating RA procedure with preamble 40, energy 13.8 dB (I0 10, thres 120), delay 22 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 823, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:823/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 823 Activating Msg2 generation in frame 824, slot 8 using RA rnti 10b SSB, new rnti 254b index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 824, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 824 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 824, Subframe 8: rnti 254b RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   handle harq for rnti 254b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 825, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (825,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   handle harq for rnti 254b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 826, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (826,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   handle harq for rnti 254b, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 826, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (827,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x254b
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 254b
+[0m[93m[NR_MAC]   handle harq for rnti 254b, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x254b in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x254b
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
 [0m[NR_MAC]   Frame.Slot 896.0
 
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
-[0m[NR_MAC]   Frame.Slot 768.0
-
-[0m[NR_MAC]   Frame.Slot 896.0
-
-[0m[NR_MAC]   Frame.Slot 0.0
-
-[0m[PHY]   prach_I0 = 0.0 dB
-[0m[NR_MAC]   Frame.Slot 128.0
-
-[0m[NR_MAC]   Frame.Slot 256.0
-
-[0m[NR_MAC]   Frame.Slot 384.0
-
-[0m[NR_MAC]   Frame.Slot 512.0
-
-[0m[NR_MAC]   Frame.Slot 640.0
-
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 924, slot 19 Initiating RA procedure with preamble 9, energy 13.2 dB (I0 8, thres 120), delay 57 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 924, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:924/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 924 Activating Msg2 generation in frame 925, slot 8 using RA rnti 10b SSB, new rnti 3bb6 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 925, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 925 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 925, Subframe 8: rnti 3bb6 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   handle harq for rnti 3bb6, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 926, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (926,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   handle harq for rnti 3bb6, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 927, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (927,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   handle harq for rnti 3bb6, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 927, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (928,3)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   Random Access 0 failed at state 2 (Reached msg3 max harq rounds)
+[0m[93m[NR_MAC]   to remove in mac rnti_to_remove[0] = 0x3bb6
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 3bb6
+[0m[93m[NR_MAC]   handle harq for rnti 3bb6, in RA process
+[0m[1;31m[NR_MAC]   handle_nr_ul_harq(): unknown RNTI 0x3bb6 in PUSCH
+[0m[93m[NR_PHY]   to remove rnti 0x3bb6
+[0m[93m[NR_PHY]   to remove rnti_to_remove_count=1, up_removed=1 down_removed=0 pucch_removed=0
+[0m[NR_PHY]   [gNB 0][RAPROC] Frame 1020, slot 19 Initiating RA procedure with preamble 25, energy 13.6 dB (I0 12, thres 120), delay 8 start symbol 0 freq index 0
+[0m[32m[MAC]   UL_info[Frame 1020, Slot 19] Calling initiate_ra_proc RACH:SFN/SLOT:1020/19
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 1020 Activating Msg2 generation in frame 1021, slot 8 using RA rnti 10b SSB, new rnti 5e31 index 0 RA index 0
+[0m[32m[NR_MAC]   [gNB 0][RAPROC] CC_id 0 Frame 1021, slotP 8: Generating RA-Msg2 DCI, rnti 0x10b, state 1, CoreSetType 2
+[0m[NR_MAC]   [RAPROC] Msg3 slot 18: current slot 8 Msg3 frame 1021 k2 7 Msg3_tda_id 3
+[0m[93m[NR_MAC]   [gNB 0][RAPROC] Frame 1021, Subframe 8: rnti 5e31 RA state 2
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   handle harq for rnti 5e31, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 1022, Slot 6 : CC_id 0 Scheduling retransmission of Msg3 in (1022,13)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   handle harq for rnti 5e31, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 1023, Slot 1 : CC_id 0 Scheduling retransmission of Msg3 in (1023,8)
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   Search for not existing rnti (ignore for RA): 5e31
+[0m[93m[NR_MAC]   handle harq for rnti 5e31, in RA process
+[0m[NR_MAC]   [gNB 0][RAPROC] Frame 1023, Slot 16 : CC_id 0 Scheduling retransmission of Msg3 in (1024,3)
 [0m
+Assertion (future_ul_tti_req->SFN == sched_frame && future_ul_tti_req->Slot == sched_slot) failed!
+In nr_generate_Msg3_retransmission() ../../../openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_RA.c:760
+future UL_tti_req's frame.slot 0.3 does not match PUSCH 1024.3
+
+Exiting execution
+wait in ru_thread() till first_call_set is set in xran
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+first_call set from phy cb first_call_set=0x7ff085634201
+wait in ru_thread for first_rx_set to set in xran
+first_rx is set
