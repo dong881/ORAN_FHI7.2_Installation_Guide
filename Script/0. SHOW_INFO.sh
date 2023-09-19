@@ -2,6 +2,9 @@
 echo -e "\n=== Red Hat Release: ==="
 cat /etc/redhat-release
 
+echo -e "\n=== Ubuntu version: ==="
+lsb_release -a
+
 echo -e "\n=== Kernel Information: ==="
 uname -a
 
